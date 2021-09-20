@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            background: url(assets/background.jpg);
+            background-size: cover;
+            background-position: center;
+            
+        }
+        div h1{
+            font-style: italic;
+            color: skyblue;
+            text-align: center;
+            font-size: 100px;
+        }
+        .eventsname{
+            padding-left: 10px;
+            background-color: white;
+            text-align: center;
+            color: black;
+        }
+        .eventsname ul{
+            display: inline-flex;
+            list-style: none;
+            text-align: center;
+            display: flex;
+            color:black;
+        }
+        .eventsname ul li{
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+            color: black;
+        }
+        .eventsname ul li a{
+            text-decoration: none;
+        }
+        .eventsname ul li:hover{
+            background: #369720;
+            border-radius: 3px;
+        }
+        .menu-1{
+            display: none;
+        }
+        .eventsname ul li:hover .menu-1{
+            display: block;
+            position: absolute;
+            background: rgb(223, 156, 156);
+            margin-top: 15px;
+            margin-left: -15px;
+        }
+        .eventsname ul li:hover .menu-1 ul{
+            display: block;
+            margin: 10px;
+        }
+        .eventsname ul li:hover .menu-1 ul li{
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+        .eventsname ul li:hover .menu-1 ul li:last-child{
+            border-bottom: none;
+        }
+        .eventsname ul li:hover .menu-1 ul li a:hover{
+            color: royalblue;
+        }
+        .eventsname ul li img{
+            width: 100px;
+            height: 70px;
+        }
+        .eventsname .menu-1 ul li a{
+            color: brown;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+        }
+        footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+    </style>
+    <div>
+        <h1>Events</h1>
+        <div class="eventsname">
+           <ul>
+            <li><a href="#">Married</a>
+            <div class="menu-1">
+                <ul>
+                    <li><a href="evetsimg/marathiwedding.jpg"><img src="evetsimg/marathiwedding.jpg" alt=""><br>Maharashtrian wedding decoration</a></li>
+                    <li><a href="evetsimg/ecofriendlywedding.jpg"><img src="evetsimg/ecofriendlywedding.jpg" alt=""><br>Eco-Friendly Decoration</a></li>
+                    <li><a href="evetsimg/wedding-flower-decoration.jpg"><img src="evetsimg/wedding-flower-decoration.jpg" alt=""><br>Flower Wedding</a></li>
+                    <li><a href="evetsimg/wedding.jpg"><img src="evetsimg/wedding.jpg" alt="">Wedding Decoration</a></li>
+                    <li><a href="evetsimg/wedding1.jpg"><img src="evetsimg/wedding1.jpg" alt="">Wedding Decoration</a></li>
+                    <li><a href="evetsimg/weddingballon.jpeg"><img src="evetsimg/weddingballon.jpeg" alt=""><br>Balloon Wedding Decoration</a></li>
+                    <li><a href="evetsimg/weding.png"><img src="evetsimg/weding.png" alt="">Wedding Decoration</a></li>
+                    <li><a href="evetsimg/flowerdecoration.jpg"><img src="evetsimg/flowerdecoration.jpg" alt=""><br>Flower Wedding Decoration</a></li>
+                </ul>
+            </div>
+            </li>
+            <li><a href="#">Anniversary</a>
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="evetsimg/balloonanniversary.jpg"><img src="evetsimg/balloonanniversary.jpg" alt="">Balloon Anniversary Decoration</a></li>
+                        <li><a href="evetsimg/flowerdecoration.jpg"><img src="evetsimg/flowerdecoration.jpg" alt="">Flower Anniversary Decoration</a></li>
+                        <li><a href="evetsimg/roomdecoration.jpg"><img src="evetsimg/roomdecoration.jpg" alt="">Speacial Room Decoration</a></li>
+                        <li><a href="evetsimg/anniversary.jpg"><img src="evetsimg/anniversary.jpg" alt="">Anniversary Decoration</a></li>
+                        <li><a href="evetsimg/aniversary.jpg"><img src="evetsimg/aniversary.jpg" alt="">Anniversary Decoration</a></li>
+                        <li><a href="evetsimg/photosanniversary.jpg"><img src="evetsimg/photosanniversary.jpg" alt="">Photos Decoration</a></li>
+                        <li><a href="evetsimg/25thanniversary.jpeg"><img src="evetsimg/25thanniversary.jpeg" alt="">25th Anniversary</a></li>
+                        <li><a href="evetsimg/amezing25th.jpg"><img src="evetsimg/amezing25th.jpg" alt="">25th Anniversary Decoration</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Birthday</a>
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="evetsimg/ballon.jpg"><img src="evetsimg/ballon.jpg" alt="">Balloon Decoration</a></li>
+                        <li><a href="evetsimg/photos_ballons.jpg"><img src="evetsimg/photos_ballons.jpg" alt="">Photos Balloon Decoration</a></li>
+                        <li><a href="evetsimg/ballonnhd.jpeg"><img src="evetsimg/ballonnhd.jpeg" alt="">Balloon Decoration</a></li>
+                        <li><a href="evetsimg/pastelballoon.jpg"><img src="evetsimg/pastelballoon.jpg" alt="">Pastel Balloon Decoration</a></li>
+                        <li><a href="evetsimg/Balloon-Studioa.jpg"><img src="evetsimg/Balloon-Studioa.jpg" alt="">Balloon studioa Decoration</a></li>
+                        <li><a href="evetsimg/balloondecoration.jpg"><img src="evetsimg/balloondecoration.jpg" alt="">Balloon Decoration</a></li>
+                        <li><a href="evetsimg/barbiballoon.jpg"><img src="evetsimg/barbiballoon.jpg" alt="">Barbi Balloon Decoration</a></li>
+                        <li><a href="evetsimg/homeideas.jpg"><img src="evetsimg/homeideas.jpg" alt="">Paper Decoration</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Engagement</a>
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="evetsimg/flowerdecoration.jpg"><img src="evetsimg/flowerdecoration.jpg" alt="">Flower Decoration</a></li>
+                        <li><a href="evetsimg/engagement.jpg"><img src="evetsimg/engagement.jpg" alt="">Engagement Decoration</a></li>
+                        <li><a href="evetsimg/simpleenagagement.jpg"><img src="evetsimg/simpleenagagement.jpg" alt="">Traditional Engagement Decoration</a></li>
+                        <li><a href="evetsimg/simplehomedecoration.jpg"><img src="evetsimg/simplehomedecoration.jpg" alt="">Engagement Decoration At home</a></li>
+                        <li><a href="evetsimg/modernhalldecoration.jpg"><img src="evetsimg/modernhalldecoration.jpg" alt="">Modern Hall Decoration</a></li>
+                        <li><a href="evetsimg/engagementdecoration.jpg"><img src="evetsimg/engagementdecoration.jpg" alt="">Simple Engagement Decoration</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Official</a>
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="evetsimg/officeballoon.jpg"><img src="evetsimg/officeballoon.jpg" alt="">Balloon Decoration</a></li>
+                        <li><a href="evetsimg/officeevent.jpg"><img src="evetsimg/officeevent.jpg" alt=""><br>Event Decoration </a></li>
+                        <li><a href="evetsimg/officialparty.jpg"><img src="evetsimg/officialparty.jpg" alt=""><br>Office Party Decoration</a></li>
+                        <li><a href="evetsimg/lightingdecoration.jpg"><img src="evetsimg/lightingdecoration.jpg" alt="">Lighting Decoration</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Baby Shower</a>
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="evetsimg/babyshowe1.jpg"><img src="evetsimg/babyshowe1.jpg" alt=""><br>Baby Shower</a></li>
+                        <li><a href="evetsimg/babyshowerflower.jpg"><img src="evetsimg/babyshowerflower.jpg" alt="">Tradition Baby Decoration</a></li>
+                        <li><a href="evetsimg/babyshowermaharashtra.jpg"><img src="evetsimg/babyshowermaharashtra.jpg" alt="">Maharashtrian Baby Shower</a></li>
+                        <li><a href="evetsimg/indianbabyshower.jpg"><img src="evetsimg/indianbabyshower.jpg" alt=""><br>Indian Style Baby Shower Function</a></li>
+                        <li><a href="evetsimg/babyshowerparty.jpg"><img src="evetsimg/babyshowerparty.jpg" alt=""><br> Shower Decoration</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Festival</a>
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="evetsimg/lighting.jpg"><img src="evetsimg/lighting.jpg" alt="">Lighting Decoration</a></li>
+                        <li><a href="evetsimg/ganpati-decoration.jpg"><img src="evetsimg/ganpati-decoration.jpg" alt="">Ganapati Decoration</a></li>
+                        <li><a href="evetsimg/garbadecoration.jpg"><img src="evetsimg/garbadecoration.jpg" alt="">Garba Decoration</a></li>
+                        <li><a href="evetsimg/krishanaceremony.jpg"><img src="evetsimg/krishanaceremony.jpg" alt="">Krishana Born Ceremony</a></li>
+                    </ul>
+                </div>
+            </li>
+           </ul>
+        </div>
+    </div>
+    <footer>
+    <h2>Note:-According to customers order we can provide the best service and event related iteams like a cake,speacial cake,special decoration,lunch,dinner,hall (ac/non-ac),and many more things</h2>
+    </footer>
+</body>
+</html>

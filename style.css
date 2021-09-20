@@ -1,0 +1,213 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+  max-width: 1170px;
+  background-color: darkgrey;
+  margin: auto;
+}
+/* main body */
+body{
+    background-image: url();
+    background-position: center;
+    background-size: cover;    
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/*navigation style*/
+nav{
+    background: rgb(88, 169, 206);
+    text-align: center;
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+nav ul li{
+    text-decoration: none;
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a.active{
+    background-color: yellow;
+}
+nav ul li:hover{
+    background-color: yellow;
+}
+hgroup{
+    display: contents;
+    text-align: center;
+    background: rgb(224, 248, 115);
+}
+hgroup h1{
+    font-family: initial;
+    font: x-large;
+    font-size: 50px;
+    font-style: oblique;
+    color: maroon;
+}
+hgroup h1 samp{
+    font-size: 50px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+hgroup h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: larger;
+    font-size: 35px;
+    
+}
+hgroup h2 b{
+    font-style: italic;
+    
+}
+header
+{ 
+    box-sizing:border-box;
+}
+
+/* Slideshow container */
+header .slideshow-container {
+  position: relative;
+  margin: 200px;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+/* Next & previous buttons */
+header .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -20px;
+  padding: 26px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+header .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+header .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+header .text {
+  color: #f2f2f2;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+header .numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10px;
+}
+
+/* The dots/bullets/indicators */
+header .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+header .active, .dot:hover {
+  background-color: #ffff;
+}
+
+/* Fading animation */
+header .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+section{
+  padding-top: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+section h1{
+  font-style: italic;
+}
+section table{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 70px;
+  font-size: large;
+  font-weight: 200;
+  
+}
+section table, tr, th{
+  height: 50px;
+  table-layout: auto;
+  text-align: center;
+  border: 1px solid black;
+  color: black;
+  font-size: larger;
+  background-color: skyblue;
+}
+section table, tr, td{
+  border: 1px solid black;
+  padding: 10px;
+}
+footer{
+  margin: 0px;
+  padding: 0px;
+}
+footer h2{
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+footer div {
+  text-align: center;
+  
+}
+footer div a{
+  text-decoration: none;
+  color: black;
+}
